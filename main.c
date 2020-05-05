@@ -52,17 +52,16 @@ double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
 
 int main()
 {
-    printf("Hello World\n");
-    ezxml_t f1 = ezxml_parse_file("test.xml"), team, driver;
-    const char *teamname;
-
-    for (team = ezxml_child(f1, "team"); team; team = team->next) {
-        teamname = ezxml_attr(team, "name");
-        for (driver = ezxml_child(team, "driver"); driver; driver = driver->next) {
-            printf("%s, %s: %s\n", ezxml_child(driver, "name")->txt, teamname,
-                   ezxml_child(driver, "points")->txt);
+    ezxml_t xml = ezxml_parse_file("history-2020-03-20.xml"), placemark, point, line_string;
+    xml = ezxml_child(xml, "Document");
+    for (placemark = ezxml_child(xml, "Placemark"); placemark; placemark = placemark->next){
+        for (point = ezxml_child(placemark, "Point"); point; point = point->next){
+            printf("%s\n", ezxml_child(point, "coordinates")->txt);
+        }
+        for (line_string = ezxml_child(placemark, "LineString"); line_string; line_string = line_string->next){
+            printf("%s\n", ezxml_child(line_string, "coordinates")->txt);
         }
     }
-    ezxml_free(f1);
+    ezxml_free(xml);
     return 0;
 }

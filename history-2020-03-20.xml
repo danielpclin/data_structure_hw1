@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document>
+        <name>Location history from 2020-03-20 to 2020-03-20</name>
+        <open>1</open>
+        <description></description>
+        <StyleMap id="multiTrack">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#multiTrack_n</styleUrl>
+            </Pair>
+            <Pair>
+                <key>highlight</key>
+                <styleUrl>#multiTrack_h</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Style id="multiTrack_n">
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+                </Icon>
+            </IconStyle>
+            <LineStyle>
+                <color>99ffac59</color>
+                <width>6</width>
+            </LineStyle>
+        </Style>
+        <Style id="multiTrack_h">
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+                </Icon>
+            </IconStyle>
+            <LineStyle>
+                <color>99ffac59</color>
+                <width>8</width>
+            </LineStyle>
+        </Style>
+        <Placemark>
+            <name>臺灣桃園國際機場</name>
+            <address>33758桃園市大園區航站南路9號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>機場</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>機場 from 2020-03-19T16:00:00.000Z to 2020-03-19T23:22:26.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.234217,25.0796514,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-19T16:00:00.000Z</begin>
+                <end>2020-03-19T23:22:26.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>7824</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-19T23:22:26.000Z to 2020-03-19T23:32:05.000Z. Distance 7824m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.234217,25.0796514,0 121.234217,25.0796514,0 121.2173832,25.0109536,0
+                    121.2173832,25.0109536,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-19T23:22:26.000Z</begin>
+                <end>2020-03-19T23:32:05.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>桃園高鐵站前廣場HSR Taoyuan Station Plaza</name>
+            <address>320桃園市中壢區高鐵北路一段</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>露天廣場</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>露天廣場 from 2020-03-19T23:32:05.000Z to 2020-03-19T23:59:52.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.2173832,25.0109536,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-19T23:32:05.000Z</begin>
+                <end>2020-03-19T23:59:52.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>117046</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-19T23:59:52.000Z to 2020-03-20T00:03:43.000Z. Distance 117046m
+            </description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.2173832,25.0109536,0 121.2173832,25.0109536,0 120.61573150000001,24.1117411,0
+                    120.61573150000001,24.1117411,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-19T23:59:52.000Z</begin>
+                <end>2020-03-20T00:03:43.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>高鐵台中站</name>
+            <address>414台中市烏日區站區二路8號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>火車站</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>火車站 from 2020-03-20T00:03:43.000Z to 2020-03-20T00:57:34.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6157315,24.1117411,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T00:03:43.000Z</begin>
+                <end>2020-03-20T00:57:34.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>7469</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T00:57:34.000Z to 2020-03-20T01:01:45.000Z. Distance 7469m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.61573150000001,24.1117411,0 120.61573150000001,24.1117411,0 120.6835552,24.1378278,0
+                    120.6835552,24.1378278,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T00:57:34.000Z</begin>
+                <end>2020-03-20T01:01:45.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>宮原眼科</name>
+            <address>400台中市中區中山路20號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>糖果糕餅店</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>糖果糕餅店 from 2020-03-20T01:01:45.000Z to 2020-03-20T02:42:01.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6835552,24.1378278,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T01:01:45.000Z</begin>
+                <end>2020-03-20T02:42:01.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>2794</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T02:42:01.000Z to 2020-03-20T02:43:01.000Z. Distance 2794m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.6835552,24.1378278,0 120.6835552,24.1378278,0 120.66606060000001,24.1572335,0
+                    120.66606060000001,24.1572335,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T02:42:01.000Z</begin>
+                <end>2020-03-20T02:43:01.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>國立自然科學博物館</name>
+            <address>404台中市北區館前路1號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>自然歷史博物館</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>自然歷史博物館 from 2020-03-20T02:43:01.000Z to 2020-03-20T06:03:59.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6660606,24.1572335,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T02:43:01.000Z</begin>
+                <end>2020-03-20T06:03:59.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>2111</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T06:03:59.000Z to 2020-03-20T06:04:59.000Z. Distance 2111m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.66606060000001,24.1572335,0 120.66606060000001,24.1572335,0
+                    120.68551830000001,24.150502,0 120.68551830000001,24.150502,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T06:03:59.000Z</begin>
+                <end>2020-03-20T06:04:59.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>404台中市北區一中街</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value></value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>from 2020-03-20T06:04:59.000Z to 2020-03-20T07:09:39.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6855183,24.150502,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T06:04:59.000Z</begin>
+                <end>2020-03-20T07:09:39.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>4682</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T07:09:39.000Z to 2020-03-20T07:10:39.000Z. Distance 4682m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.68551830000001,24.150502,0 120.68551830000001,24.150502,0
+                    120.64077279999998,24.1402001,0 120.64077279999998,24.1402001,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T07:09:39.000Z</begin>
+                <end>2020-03-20T07:10:39.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>涵館汽車旅館</name>
+            <address>408台中市南屯區惠弘街169號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>汽車旅館</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>汽車旅館 from 2020-03-20T07:10:39.000Z to 2020-03-20T10:33:11.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6407728,24.140200099999998,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T07:10:39.000Z</begin>
+                <end>2020-03-20T10:33:11.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>4333</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T10:33:11.000Z to 2020-03-20T10:48:48.000Z. Distance 4333m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.64077279999998,24.1402001,0 120.64077279999998,24.1402001,0
+                    120.64646090000001,24.1788237,0 120.64646090000001,24.1788237,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T10:33:11.000Z</begin>
+                <end>2020-03-20T10:48:48.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>逢甲夜市</name>
+            <address>407台中市西屯區文華路</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>夜市</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>夜市 from 2020-03-20T10:48:48.000Z to 2020-03-20T11:23:45.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6464609,24.1788237,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T10:48:48.000Z</begin>
+                <end>2020-03-20T11:23:45.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>538</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T11:23:45.000Z to 2020-03-20T11:24:57.000Z. Distance 538m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.64646090000001,24.1788237,0 120.64646090000001,24.1788237,0</coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T11:23:45.000Z</begin>
+                <end>2020-03-20T11:24:57.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>2594</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T11:24:57.000Z to 2020-03-20T11:30:44.000Z. Distance 2594m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.647533,24.150664,0 120.647533,24.150664,0</coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T11:24:57.000Z</begin>
+                <end>2020-03-20T11:30:44.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>燒肉風間 Kazama</name>
+            <address>40861台中市南屯區公益路二段171-1號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>日式燒肉</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>日式燒肉 from 2020-03-20T11:30:44.000Z to 2020-03-20T13:04:04.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.647533,24.150664,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T11:30:44.000Z</begin>
+                <end>2020-03-20T13:04:04.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>6763</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T13:04:04.000Z to 2020-03-20T13:14:12.000Z. Distance 6763m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.647533,24.150664,0 120.647533,24.150664,0 120.58132820000002,24.1435843,0
+                    120.58132820000002,24.1435843,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T13:04:04.000Z</begin>
+                <end>2020-03-20T13:14:12.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>望高寮夜景公園</name>
+            <address>408台中市南屯區中台路601號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>旅遊景點</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>旅遊景點 from 2020-03-20T13:14:12.000Z to 2020-03-20T15:19:41.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.5813282,24.1435843,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T13:14:12.000Z</begin>
+                <end>2020-03-20T15:19:41.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>Moving</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>Moving</value>
+                </Data>
+                <Data name="Distance">
+                    <value>10414</value>
+                </Data>
+            </ExtendedData>
+            <description>Moving from 2020-03-20T15:19:41.000Z to 2020-03-20T15:33:30.000Z. Distance 10414m</description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>120.58132820000002,24.1435843,0 120.58132820000002,24.1435843,0 120.6838152,24.1385148,0
+                    120.6838152,24.1385148,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-20T15:19:41.000Z</begin>
+                <end>2020-03-20T15:33:30.000Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>綠川水岸景觀步道</name>
+            <address>400台中市中區綠川西街135號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>Zack19990508@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>旅遊景點</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>旅遊景點 from 2020-03-20T15:33:30.000Z to 2020-03-20T16:00:00.000Z. Distance 0m</description>
+            <Point>
+                <coordinates>120.6838152,24.1385148,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-20T15:33:30.000Z</begin>
+                <end>2020-03-20T16:00:00.000Z</end>
+            </TimeSpan>
+        </Placemark>
+    </Document>
+</kml>

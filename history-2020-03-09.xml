@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document>
+        <name>Location history from 2020-03-09 to 2020-03-09</name>
+        <open>1</open>
+        <description></description>
+        <StyleMap id="multiTrack">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#multiTrack_n</styleUrl>
+            </Pair>
+            <Pair>
+                <key>highlight</key>
+                <styleUrl>#multiTrack_h</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Style id="multiTrack_n">
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+                </Icon>
+            </IconStyle>
+            <LineStyle>
+                <color>99ffac59</color>
+                <width>6</width>
+            </LineStyle>
+        </Style>
+        <Style id="multiTrack_h">
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+                </Icon>
+            </IconStyle>
+            <LineStyle>
+                <color>99ffac59</color>
+                <width>8</width>
+            </LineStyle>
+        </Style>
+        <Placemark>
+            <name>On a train</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>On a train</value>
+                </Data>
+                <Data name="Distance">
+                    <value>31501</value>
+                </Data>
+            </ExtendedData>
+            <description>On a train from 2020-03-09T00:21:28.841Z to 2020-03-09T01:23:23.917Z. Distance 31501m
+            </description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.0092902,24.8390458,0 121.0116359,24.842384,0 120.9936064,24.8670748,0
+                    121.055716,24.9222291,0 121.1220619,24.9221817,0 121.1559526,24.9140371,0 121.1837433,24.9192775,0
+                    121.2164059,24.9449197,0 121.2238539,24.9543432,0 121.2238539,24.954343200000004,0
+                    121.2238539,24.954343200000004,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-09T00:21:28.841Z</begin>
+                <end>2020-03-09T01:23:23.917Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>石頭里</name>
+            <address>320桃園市中壢區</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value></value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>from 2020-03-09T01:23:23.917Z to 2020-03-09T01:31:16.609Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.2243603,24.954126799999997,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-09T01:23:23.917Z</begin>
+                <end>2020-03-09T01:31:16.609Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>On a bus</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>On a bus</value>
+                </Data>
+                <Data name="Distance">
+                    <value>5392</value>
+                </Data>
+            </ExtendedData>
+            <description>On a bus from 2020-03-09T01:31:16.609Z to 2020-03-09T01:57:17.756Z. Distance 5392m
+            </description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.2238539,24.954343200000004,0 121.2238539,24.954343200000004,0 121.2226657,24.9549682,0
+                    121.2112106,24.9561323,0 121.1972618,24.9572274,0 121.2027431,24.968001,0 121.1942019,24.9698606,0
+                    121.1917282,24.9670864,0 121.19157083488588,24.967787363887354,0
+                    121.19157083488588,24.967787363887354,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-09T01:31:16.609Z</begin>
+                <end>2020-03-09T01:57:17.756Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>國立中央大學</name>
+            <address>320桃園市中壢區中大路300號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>公立大學</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>公立大學 from 2020-03-09T01:57:17.756Z to 2020-03-09T04:31:47.112Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.1922029,24.9679966,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-09T01:57:17.756Z</begin>
+                <end>2020-03-09T04:31:47.112Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>On a bus</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>On a bus</value>
+                </Data>
+                <Data name="Distance">
+                    <value>4811</value>
+                </Data>
+            </ExtendedData>
+            <description>On a bus from 2020-03-09T04:31:47.112Z to 2020-03-09T04:50:34.567Z. Distance 4811m
+            </description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.19157083488588,24.967787363887354,0 121.19157083488588,24.967787363887354,0
+                    121.191287,24.9684377,0 121.1953139,24.9668568,0 121.2024327,24.9682796,0 121.2005473,24.9623465,0
+                    121.2042205,24.9572186,0 121.2130439,24.9559127,0 121.2237969,24.9541838,0
+                    121.22559439999999,24.9537299,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-09T04:31:47.112Z</begin>
+                <end>2020-03-09T04:50:34.567Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>中壢車站</name>
+            <address>32041桃園市中壢區中和路139 號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>火車站</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>火車站 from 2020-03-09T04:50:34.567Z to 2020-03-09T04:58:02.977Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.22559439999999,24.9537299,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-09T04:50:34.567Z</begin>
+                <end>2020-03-09T04:58:02.977Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>On a train</name>
+            <address></address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>On a train</value>
+                </Data>
+                <Data name="Distance">
+                    <value>33864</value>
+                </Data>
+            </ExtendedData>
+            <description>On a train from 2020-03-09T04:58:02.977Z to 2020-03-09T05:49:05.967Z. Distance 33864m
+            </description>
+            <LineString>
+                <altitudeMode>clampToGround</altitudeMode>
+                <extrude>1</extrude>
+                <tesselate>1</tesselate>
+                <coordinates>121.22559439999999,24.9537299,0 121.2234572,24.9525262,0 121.1861449,24.9224025,0
+                    121.1709536,24.9127372,0 121.1454576,24.9146399,0 121.0961245,24.9318666,0 121.0623657,24.9296769,0
+                    121.05315,24.9185707,0 121.0420999,24.8997891,0 121.004077,24.875343,0 120.9952278,24.8687517,0
+                    121.0128553,24.850207,0 121.0090593,24.8391771,0 121.0104622,24.8384948,0 121.0091361,24.8383713,0
+                    121.00918739999999,24.8390713,0 121.00918739999999,24.8390713,0
+                </coordinates>
+            </LineString>
+            <TimeSpan>
+                <begin>2020-03-09T04:58:02.977Z</begin>
+                <end>2020-03-09T05:49:05.967Z</end>
+            </TimeSpan>
+        </Placemark>
+        <Placemark>
+            <name>竹北車站</name>
+            <address>302新竹縣竹北市和平街59號</address>
+            <ExtendedData>
+                <Data name="Email">
+                    <value>daniel.pclin@gmail.com</value>
+                </Data>
+                <Data name="Category">
+                    <value>火車站</value>
+                </Data>
+                <Data name="Distance">
+                    <value>0</value>
+                </Data>
+            </ExtendedData>
+            <description>火車站 from 2020-03-09T05:49:05.967Z to 2020-03-10T01:39:24.477Z. Distance 0m</description>
+            <Point>
+                <coordinates>121.00918739999999,24.8390713,0</coordinates>
+            </Point>
+            <TimeSpan>
+                <begin>2020-03-09T05:49:05.967Z</begin>
+                <end>2020-03-10T01:39:24.477Z</end>
+            </TimeSpan>
+        </Placemark>
+    </Document>
+</kml>
