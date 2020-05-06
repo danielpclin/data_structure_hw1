@@ -1,67 +1,140 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <string.h>
 #include "ezxml.h"
+#include "helper.h"
 
-#define PI 3.14159265358979323846
+struct list{
+    struct node* head;
+    struct node* tail;
+};
 
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-/*::  This function converts decimal degrees to radians             :*/
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-double deg2rad(double deg) {
-    return (deg * PI / 180);
+struct node{
+    struct node* next;
+    struct coord coord;
+};
+
+struct coord parseCoord(char* str){
+    char *endPtr;
+    struct coord struct_coord;
+    struct_coord.lon = strtod(str, &endPtr);
+    struct_coord.lat = strtod(endPtr+1, NULL);
+    return struct_coord;
 }
 
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-/*::  This function converts radians to decimal degrees             :*/
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-double rad2deg(double rad) {
-    return (rad * 180 / PI);
+struct list* createList(){
+    struct list* list = malloc(sizeof(struct list));
+    list->head = NULL;
+    list->tail = NULL;
+    return list;
 }
 
-// Unit 'K' is kilometers (default)
-// Unit 'M' is statute miles
-// 'N' is nautical miles
-// https://www.geodatasource.com/developers/c
-double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
-    double theta, dist;
-    if ((lat1 == lat2) && (lon1 == lon2)) {
-        return 0;
+void freeList(struct list* list){
+    struct node* node = list->head;
+    while(node){
+        struct node* tmp = node->next;
+        free(node);
+        node = tmp;
     }
-    else {
-        theta = lon1 - lon2;
-        dist = sin(deg2rad(lat1)) * sin(deg2rad(lat2)) + cos(deg2rad(lat1)) * cos(deg2rad(lat2)) * cos(deg2rad(theta));
-        dist = acos(dist);
-        dist = rad2deg(dist);
-        dist = dist * 60 * 1.853159616;
-        switch(unit) {
-            case 'M':
-                dist = dist / 1.609344;
+    free(list);
+}
+
+void add(struct list* list, struct coord coord){
+    struct node* node = malloc(sizeof(struct node));
+    node->next = NULL;
+    node->coord = coord;
+    if (list->head){
+        int dupe = 0;
+        struct node* tmp = list->head;
+        while (tmp){
+            if (tmp->coord.lon == coord.lon && tmp->coord.lat == coord.lat){
+                dupe = 1;
                 break;
-            case 'N':
-                dist = dist * 0.53959874;
-                break;
-            case 'K':
-            default:
-                break;
+            }
+            tmp = tmp->next;
         }
-        return (dist);
+        if (dupe){
+            free(node);
+        }else{
+            list->tail->next = node;
+            list->tail = list->tail->next;
+        }
+    }else{
+        list->head = node;
+        list->tail = node;
     }
 }
 
-
-int main()
-{
-    ezxml_t xml = ezxml_parse_file("history-2020-03-20.xml"), placemark, point, line_string;
-    xml = ezxml_child(xml, "Document");
-    for (placemark = ezxml_child(xml, "Placemark"); placemark; placemark = placemark->next){
-        for (point = ezxml_child(placemark, "Point"); point; point = point->next){
-            printf("%s\n", ezxml_child(point, "coordinates")->txt);
+struct list* parseFile(char* file_name){
+    ezxml_t xml, doc, placemark, point, line_string;
+    struct list* list = createList();
+    xml = ezxml_parse_file(file_name);
+    if (!xml) exit(-1);
+    doc = xml;
+    if (!ezxml_child(doc, "Placemark")){
+        doc = ezxml_child(doc, "Document");
+        if (!ezxml_child(doc, "Placemark")){
+            doc = ezxml_child(doc, "Folder");
         }
-        for (line_string = ezxml_child(placemark, "LineString"); line_string; line_string = line_string->next){
-            printf("%s\n", ezxml_child(line_string, "coordinates")->txt);
+    }
+    while (doc){
+        placemark = ezxml_child(doc, "Placemark");
+        while  (placemark){
+            for (point = ezxml_child(placemark, "Point"); point; point = point->next){
+                char *str = ezxml_child(point, "coordinates")->txt;
+                struct coord struct_coord = parseCoord(str);
+                add(list, struct_coord);
+            }
+            for (line_string = ezxml_child(placemark, "LineString"); line_string; line_string = line_string->next){
+                char *str = strtok(ezxml_child(line_string, "coordinates")->txt, " ");
+                while (str){
+                    struct coord struct_coord = parseCoord(str);
+                    add(list, struct_coord);
+                    str = strtok(NULL, " \n");
+                }
+            }
+            placemark = placemark->next;
         }
+        doc = doc->next;
     }
     ezxml_free(xml);
+    return list;
+}
+
+int overlap(char* file_name1, char* file_name2, double max_distance){
+    struct list* list1 = parseFile(file_name1);
+    struct list* list2 = parseFile(file_name2);
+    struct node* head1 = list1->head;
+    struct node* head2 = list2->head;
+    struct node* node1 = head1;
+    int result = 0;
+    while (node1){
+        struct node* node2 = head2;
+        while (node2){
+            if (distance(node1->coord, node2->coord, 'K') < max_distance){
+                printf("Coord1: (%f, %f) Coord2: (%f, %f) overlaps within %.2f km\n", node1->coord.lon, node1->coord.lat, node2->coord.lon, node2->coord.lat, max_distance);
+                result = 1;
+            }
+            node2 = node2->next;
+        }
+        node1 = node1->next;
+    }
+    freeList(list1);
+    freeList(list2);
+    return result;
+}
+
+int main(int argc, char* argv[])
+{
+    if (argc == 4){
+        double dis = strtod(argv[3], NULL);
+        if (dis == 0) {
+            printf("Enter valid distance\n");
+            return 0;
+        }
+        printf("%s\n", overlap(argv[1], argv[2], dis) ? "Routes overlap!" : "Routes does not overlap.");
+    }else{
+        printf("Arguments invalid\n");
+    }
     return 0;
 }

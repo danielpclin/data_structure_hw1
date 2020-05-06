@@ -3,4 +3,4 @@ project(data_structure_hw1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(data_structure_hw1 main.c ezxml.c ezxml.h)
+add_executable(data_structure_hw1 main.c ezxml.c ezxml.h helper.c helper.h)
